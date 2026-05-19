@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 03: Funciones y Arrays</title>
+    <!-- Estilos compartidos -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .module-content {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #e2e8f0;
+        }
+        .code-block {
+            background: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            margin: 1rem 0;
+            color: #10b981;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-back:hover {
+            color: #7dd3fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="container">
+        <a href="../index.html" class="btn-back">← Volver al Dashboard</a>
+        
+        <header class="header" style="margin-top: 0; text-align: left;">
+            <h1 class="title" style="font-size: 3rem;">03. <span class="gradient-text">Funciones y Arrays</span></h1>
+            <p class="subtitle" style="margin: 0;">Domina la reutilización de código y las colecciones de datos modernas.</p>
+        </header>
+
+        <main class="module-content">
+            <h2>¿Qué vamos a aprender?</h2>
+            <p>1. <b>Funciones Modernas:</b> Diferencias entre funciones tradicionales y <i>Arrow Functions</i> (Funciones flecha).</p>
+            <p>2. <b>Arrays (Arreglos):</b> Creación e iteración sobre listas de datos.</p>
+            <p>3. <b>Métodos de Arrays (ES6+):</b> El poder de <code>map</code>, <code>filter</code> y <code>reduce</code> para transformar datos sin usar ciclos manuales.</p>
+            
+            <div class="code-block">
+                // Función Flecha (Arrow Function)<br>
+                const multiplicar = (a, b) => a * b;<br>
+                <br>
+                // Método Map (Transformar un Array)<br>
+                const numeros = [1, 2, 3];<br>
+                const dobles = numeros.map(num => num * 2); // [2, 4, 6]
+            </div>
+
+            <p>Abre el archivo <code>mainFunciones.js</code> y la consola (F12) para ver los ejemplos paso a paso.</p>
+        </main>
+    </div>
+
+    <!-- Script del módulo 3 -->
+    <script src="mainFunciones.js"></script>
+</body>
+</html>

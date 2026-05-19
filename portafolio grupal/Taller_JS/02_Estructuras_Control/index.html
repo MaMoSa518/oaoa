@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 02: Estructuras de Control</title>
+    <!-- Estilos compartidos -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .module-content {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #e2e8f0;
+        }
+        .code-block {
+            background: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            margin: 1rem 0;
+            color: #10b981;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-back:hover {
+            color: #7dd3fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="container">
+        <a href="../index.html" class="btn-back">← Volver al Dashboard</a>
+        
+        <header class="header" style="margin-top: 0; text-align: left;">
+            <h1 class="title" style="font-size: 3rem;">02. <span class="gradient-text">Estructuras de Control</span></h1>
+            <p class="subtitle" style="margin: 0;">Aprende a controlar el flujo de tu aplicación usando condicionales y bucles.</p>
+        </header>
+
+        <main class="module-content">
+            <h2>¿Qué vamos a aprender?</h2>
+            <p>1. <b>Condicionales (if/else):</b> Ejecutar código solo si se cumple una condición.</p>
+            <p>2. <b>Switch:</b> Una forma más limpia de hacer múltiples "if" cuando evaluamos una sola variable.</p>
+            <p>3. <b>Bucles (while/for):</b> Repetir una acción varias veces de forma automática.</p>
+            
+            <div class="code-block">
+                // Juego de adivinar el número (Revisa la consola F12)<br>
+                if (numeroUsuario === numeroMaquina) {<br>
+                &nbsp;&nbsp;console.log("¡Ganaste!");<br>
+                } else {<br>
+                &nbsp;&nbsp;console.log("Sigue intentando...");<br>
+                }
+            </div>
+
+            <p>Abre el archivo <code>mainEstControl.js</code> en tu editor para ver el código explicado paso a paso.</p>
+        </main>
+    </div>
+
+    <!-- Script del módulo 2 -->
+    <script src="mainEstControl.js"></script>
+</body>
+</html>

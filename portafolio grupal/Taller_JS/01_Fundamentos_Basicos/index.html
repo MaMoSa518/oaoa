@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 01: Fundamentos Básicos</title>
+    <!-- Usamos el estilo base del Dashboard -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .module-content {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #e2e8f0;
+        }
+        .code-block {
+            background: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            margin: 1rem 0;
+            color: #38bdf8;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-back:hover {
+            color: #7dd3fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="container">
+        <a href="../index.html" class="btn-back">← Volver al Dashboard</a>
+        
+        <header class="header" style="margin-top: 0; text-align: left;">
+            <h1 class="title" style="font-size: 3rem;">01. <span class="gradient-text">Fundamentos Básicos</span></h1>
+            <p class="subtitle" style="margin: 0;">Variables, tipos de datos, operadores matemáticos y la consola del navegador.</p>
+        </header>
+
+        <main class="module-content">
+            <h2>Instrucciones</h2>
+            <p>1. Abre las <b>Herramientas de Desarrollador</b> de tu navegador (Presiona <code>F12</code> o haz clic derecho > Inspeccionar > Consola).</p>
+            <p>2. En la consola verás los resultados de los scripts asociados a este módulo (<code>inicio.js</code> y <code>mainBas.js</code>).</p>
+            <p>3. Abre esos archivos en tu editor de código para leer las explicaciones de cómo funcionan las variables `let` y `const`, los tipos de datos y los operadores básicos.</p>
+            
+            <div class="code-block">
+                // Ejemplo de código ES6 que encontrarás en los archivos:<br>
+                const saludo = "¡Hola Mundo!";<br>
+                console.log(saludo);
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts del módulo 1 refactorizados a ES6+ -->
+    <script src="inicio.js"></script>
+    <script src="mainBas.js"></script>
+</body>
+</html>

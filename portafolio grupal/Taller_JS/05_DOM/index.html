@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 05: Manipulación del DOM</title>
+    <!-- Estilos compartidos -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .module-content {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #e2e8f0;
+        }
+        .code-block {
+            background: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            margin: 1rem 0;
+            color: #facc15;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-back:hover {
+            color: #7dd3fc;
+        }
+        
+        /* Contenedor específico donde inyectaremos elementos con JS */
+        #contenedor-dom {
+            margin-top: 2rem;
+            padding: 2rem;
+            border: 2px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="container">
+        <a href="../index.html" class="btn-back">← Volver al Dashboard</a>
+        
+        <header class="header" style="margin-top: 0; text-align: left;">
+            <h1 class="title" style="font-size: 3rem;">05. <span class="gradient-text">Manipulación del DOM</span></h1>
+            <p class="subtitle" style="margin: 0;">DOM = Document Object Model. Aprende a crear, modificar y eliminar elementos HTML usando solo JavaScript.</p>
+        </header>
+
+        <main class="module-content">
+            <h2>Ejemplo Práctico</h2>
+            <p>El recuadro de abajo es un <code>&lt;div id="contenedor-dom"&gt;</code> vacío en el HTML, pero lo llenaremos y modificaremos dinámicamente usando JavaScript.</p>
+            
+            <div style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button id="btn-modificar" style="padding: 0.5rem 1rem; background: #3b82f6; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">1. Modificar Párrafo</button>
+                <button id="btn-crear-p" style="padding: 0.5rem 1rem; background: #8b5cf6; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">2. Crear Párrafo JS</button>
+                <button id="btn-crear-h2" style="padding: 0.5rem 1rem; background: #facc15; color: #1e293b; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">3. Crear Título H2</button>
+                <button id="btn-crear-img" style="padding: 0.5rem 1rem; background: #ec4899; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">4. Agregar Imagen</button>
+            </div>
+
+            <div id="contenedor-dom" style="border: 2px dashed rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 8px; min-height: 200px;">
+                <p id="parrafoOriginal" style="transition: all 0.3s ease;">Este es el párrafo original escrito en HTML.</p>
+            </div>
+
+            <h3 style="margin-top: 2rem;">¿Qué estamos haciendo con JS?</h3>
+            <ul>
+                <li>Seleccionamos el párrafo usando <code>document.getElementById()</code> o <code>document.querySelector()</code>.</li>
+                <li>Modificamos su texto interno con <code>.textContent</code> o <code>.innerHTML</code>.</li>
+                <li>Creamos nuevos elementos desde cero (títulos, imágenes) usando <code>document.createElement()</code>.</li>
+                <li>Agregamos estilos dinámicos a través de la propiedad <code>.style</code>.</li>
+            </ul>
+        </main>
+    </div>
+
+    <!-- Script del módulo 5 refactorizado a ES6 -->
+    <script src="ejemploDOM.js"></script>
+</body>
+</html>

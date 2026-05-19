@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 04: Objetos</title>
+    <!-- Estilos compartidos -->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .module-content {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(12px);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #e2e8f0;
+        }
+        .code-block {
+            background: #0f172a;
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            margin: 1rem 0;
+            color: #10b981;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-back:hover {
+            color: #7dd3fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="container">
+        <a href="../index.html" class="btn-back">← Volver al Dashboard</a>
+        
+        <header class="header" style="margin-top: 0; text-align: left;">
+            <h1 class="title" style="font-size: 3rem;">04. <span class="gradient-text">Objetos</span></h1>
+            <p class="subtitle" style="margin: 0;">Aprende a modelar información compleja usando objetos literales, métodos y desestructuración.</p>
+        </header>
+
+        <main class="module-content">
+            <h2>¿Qué vamos a aprender?</h2>
+            <p>1. <b>Objetos Literales:</b> Cómo almacenar datos en pares de "clave-valor".</p>
+            <p>2. <b>Métodos en Objetos:</b> Funciones que pertenecen a un objeto y describen su comportamiento.</p>
+            <p>3. <b>Desestructuración (ES6+):</b> Una forma moderna y limpia de extraer variables desde el interior de un objeto.</p>
+            
+            <div class="code-block">
+                // Objeto Literal<br>
+                const alumno = {<br>
+                &nbsp;&nbsp;nombre: "Ana",<br>
+                &nbsp;&nbsp;edad: 18,<br>
+                &nbsp;&nbsp;curso: "Desarrollo Web"<br>
+                };<br>
+                <br>
+                // Desestructuración<br>
+                const { nombre, curso } = alumno;<br>
+                console.log(nombre); // Imprime: "Ana"
+            </div>
+
+            <p>Abre el archivo <code>mainObjetos.js</code> y la consola (F12) para ver cómo funciona en la práctica.</p>
+        </main>
+    </div>
+
+    <!-- Script del módulo 4 -->
+    <script src="mainObjetos.js"></script>
+</body>
+</html>
